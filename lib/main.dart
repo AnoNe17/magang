@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nyoba/home.dart';
 import 'package:nyoba/login.dart';
 import 'package:nyoba/qr.dart';
 // import 'package:provider/provider.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: QRPage(),
+      home: HomePage(),
       // home: ChangeNotifierProvider(
       //   create: (context) => HttpProvider(),
       //   child: HomeProvider(),

@@ -98,7 +98,7 @@ class _loginPageState extends State<loginPage> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Stack(children: [
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Container(
             padding: const EdgeInsets.only(left: 35, top: 80),
             child: const Text(

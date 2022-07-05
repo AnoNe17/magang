@@ -68,7 +68,14 @@ class _QRPageState extends State<QRPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Barcode scan')),
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          title: Text("Scan QR Code"),
+          centerTitle: true,
+        ),
         body: Builder(
           builder: (BuildContext context) {
             return Container(
